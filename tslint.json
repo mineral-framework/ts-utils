@@ -8,7 +8,7 @@
         "no-any": true,
         "no-empty-interface": true,
         "no-internal-module": true,
-        "no-magic-numbers": true,
+        "no-magic-numbers": false,
         "no-namespace": true,
         "only-arrow-functions": true,
         "semicolon": [
@@ -23,7 +23,12 @@
             true,
             "never-prefix"
         ],
-        "max-classes-per-file": false
+        "max-classes-per-file": false,
+        "variable-name": {
+            "options": [
+                "allow-leading-underscore"
+            ]
+        }
     },
     "rulesDirectory": []
 }

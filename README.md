@@ -7,6 +7,7 @@ A Utils package for the Mineral Framework
 ## Table of contents
 * [Classes](#classes)
   * [Optional](#optional)
+  * [HttpStatus](#http-status)
 
 ## Classes
 
@@ -25,4 +26,17 @@ const optMessage = Optional.of<Message>({
 })
 
 const message: Message = optMessage.get()
+```
+
+### Http Status
+Class that represents the Http Status
+
+``` js
+import { HttpStatus } from '@mineral/utils'
+
+const ok: HttpStatus = HttpStatus.OK()
+
+// Status: OK, Code: 200
+console.log(`Status: ${ok.status}, Code: ${ok.code}`)
+
 ```

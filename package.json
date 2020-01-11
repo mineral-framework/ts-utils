@@ -1,0 +1,45 @@
+{
+  "name": "@mineral/utils",
+  "version": "1.0.0",
+  "description": "Util package for Mineral framework",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "build": "tsc",
+    "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": {
+    "name": "Pascal Wilbrink",
+    "url": "https://github.com/pascalwilbrink"
+  },
+  "contributors": [
+    {
+      "name": "Pascal Wilbrink",
+      "email": "pascal.wilbrink@gmail.com",
+      "url": "https://github.com/pascalwilbrink"
+    }
+  ],
+  "keywords": [
+    "Mineral",
+    "Utils"
+  ],
+  "bugs": {
+    "url": "https://github.com/mineral-framework/ts-utils/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mineral-framework/ts-utils#readme"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "coveralls": "^3.0.9",
+    "jest": "^24.9.0",
+    "jest-stare": "^1.26.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  }
+}
